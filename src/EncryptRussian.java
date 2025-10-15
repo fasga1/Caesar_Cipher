@@ -8,11 +8,11 @@ public class EncryptRussian {
                 int index = Alphabet.RUSSIAN_ALPHABET.indexOf(upperChar);
                 if (index != -1) {
                     int newIndex = (index + shift) % 32;
-                    if (newIndex < 0) newIndex += 32; // Обработка отрицательного сдвига
+                    if (newIndex < 0) newIndex += 32; 
                     char newChar = Alphabet.RUSSIAN_ALPHABET.charAt(newIndex);
                     result.append(isLowerCase ? Character.toLowerCase(newChar) : newChar);
                 } else {
-                    result.append(c); // Не русская буква — оставляем как есть
+                    result.append(c); 
                 }
             } else {
                 result.append(c);

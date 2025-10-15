@@ -8,11 +8,11 @@ public class EncryptEnglish {
                 int index = Alphabet.ENGLISH_ALPHABET.indexOf(upperChar);
                 if (index != -1) {
                     int newIndex = (index + shift) % 26;
-                    if (newIndex < 0) newIndex += 26; // Поддержка отрицательных сдвигов
+                    if (newIndex < 0) newIndex += 26; 
                     char newChar = Alphabet.ENGLISH_ALPHABET.charAt(newIndex);
                     result.append(isLowerCase ? Character.toLowerCase(newChar) : newChar);
                 } else {
-                    result.append(c); // Не английская буква — оставляем как есть
+                    result.append(c); 
                 }
             } else {
                 result.append(c);
