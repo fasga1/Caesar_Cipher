@@ -7,8 +7,8 @@ public class EncryptRussian {
                 char upperChar = Character.toUpperCase(c);
                 int index = Alphabet.RUSSIAN_ALPHABET.indexOf(upperChar);
                 if (index != -1) {
-                    int newIndex = (index + shift) % 32;
-                    if (newIndex < 0) newIndex += 32; 
+                    int newIndex = (index + shift) % 33;
+                    if (newIndex < 0) newIndex += 33;
                     char newChar = Alphabet.RUSSIAN_ALPHABET.charAt(newIndex);
                     result.append(isLowerCase ? Character.toLowerCase(newChar) : newChar);
                 } else {
