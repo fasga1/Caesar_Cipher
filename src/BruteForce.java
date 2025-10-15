@@ -27,7 +27,7 @@ public class BruteForce {
     public static void saveResultsToFile(List<String> results, String outputFile) {
         try {
             Files.write(Paths.get(outputFile), results);
-            System.out.println("✅ Все варианты перебора сохранены в: " + Paths.get(outputFile).toAbsolutePath());
+            System.out.println("Все варианты перебора сохранены в: " + Paths.get(outputFile).toAbsolutePath());
         } catch (IOException e) {
             System.err.println("Ошибка записи файла: " + e.getMessage());
         }

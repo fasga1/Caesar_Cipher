@@ -23,7 +23,7 @@ public class Main {
 
         Path inputPath = Paths.get(inputFile);
         if (!Files.exists(inputPath)) {
-            System.err.println("❌ Файл не найден: " + inputPath.toAbsolutePath());
+            System.err.println("Файл не найден: " + inputPath.toAbsolutePath());
             return;
         }
 
@@ -71,7 +71,7 @@ public class Main {
 
             try {
                 Files.writeString(Paths.get(outputFile), result);
-                System.out.println("✅ Результат записан в: " + Paths.get(outputFile).toAbsolutePath());
+                System.out.println("Результат записан в: " + Paths.get(outputFile).toAbsolutePath());
             } catch (IOException e) {
                 System.err.println("Ошибка записи: " + e.getMessage());
             }
