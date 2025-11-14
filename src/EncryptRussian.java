@@ -1,4 +1,3 @@
-package caesar.cipher;
 
 public class EncryptRussian {
     public static String encryptRussian(String text, int shift) {
