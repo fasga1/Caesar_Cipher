@@ -3,8 +3,8 @@
     ├── output.txt   ← результат (создаётся автоматически)
     └── src
         ├── Alphabet.java
-        ├── EncryptEnglish.java
-        ├── DecryptEnglish.java
-        ├── EncryptRussian.java
-        ├── DecryptRussian.java
+        ├── caesar.cipher.EncryptEnglish.java
+        ├── caesar.cipher.DecryptEnglish.java
+        ├── caesar.cipher.EncryptRussian.java
+        ├── caesar.cipher.DecryptRussian.java
         └── FileCaesarApp.java  ← main класс

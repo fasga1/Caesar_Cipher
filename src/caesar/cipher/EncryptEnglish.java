@@ -1,15 +1,17 @@
-public class EncryptRussian {
-    public static String encryptRussian(String text, int shift) {
+package caesar.cipher;
+
+public class EncryptEnglish {
+    public static String encryptEnglish(String text, int shift) {
         StringBuilder result = new StringBuilder();
         for (char c : text.toCharArray()) {
             if (Character.isLetter(c)) {
                 boolean isLowerCase = Character.isLowerCase(c);
                 char upperChar = Character.toUpperCase(c);
-                int index = Alphabet.RUSSIAN_ALPHABET.indexOf(upperChar);
+                int index = Alphabet.ENGLISH_ALPHABET.indexOf(upperChar);
                 if (index != -1) {
-                    int newIndex = (index + shift) % 33;
-                    if (newIndex < 0) newIndex += 33;
-                    char newChar = Alphabet.RUSSIAN_ALPHABET.charAt(newIndex);
+                    int newIndex = (index + shift) % 26;
+                    if (newIndex < 0) newIndex += 26; 
+                    char newChar = Alphabet.ENGLISH_ALPHABET.charAt(newIndex);
                     result.append(isLowerCase ? Character.toLowerCase(newChar) : newChar);
                 } else {
                     result.append(c); 
